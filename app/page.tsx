@@ -3,7 +3,7 @@ import OrderSummary from "@/components/order/OrderSummary";
 
 export default function Home() {
   return (
-    <div> 
+    <div className="flex"> 
       <OrderSidebar />
       <OrderSummary />
     </div>
