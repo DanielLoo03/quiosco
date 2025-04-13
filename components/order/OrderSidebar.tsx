@@ -13,7 +13,10 @@ const OrderSidebar = async() => {
 
       <nav className="mt-10">
         {categories.map(category => (
-          <CategoryIcon />
+          <CategoryIcon 
+            key={category.id}
+            category={category}          
+          />
         ))}
 
       </nav>
