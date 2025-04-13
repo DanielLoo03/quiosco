@@ -1,10 +1,11 @@
-import Sidebar from "@/components/Sidebar";
+import OrderSidebar from "@/components/order/OrderSidebar";
+import OrderSummary from "@/components/order/OrderSummary";
 
 export default function Home() {
   return (
-    <>
-      <h1>Hola mundo</h1>  
-      <Sidebar />
-    </>
+    <div> 
+      <OrderSidebar />
+      <OrderSummary />
+    </div>
   );
 }
