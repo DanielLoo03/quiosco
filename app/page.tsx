@@ -1,11 +1,7 @@
 import OrderSidebar from "@/components/order/OrderSidebar";
 import OrderSummary from "@/components/order/OrderSummary";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return (
-    <div className="flex"> 
-      <OrderSidebar />
-      <OrderSummary />
-    </div>
-  );
+  redirect('/order/cafe')
 }
