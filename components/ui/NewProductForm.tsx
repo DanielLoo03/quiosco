@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 
-
 export default function NewProductForm() {
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
@@ -70,14 +69,21 @@ export default function NewProductForm() {
         <label htmlFor="category" className="block text-sm font-medium text-gray-700">
           Categoría
         </label>
-        <input
+        <select
           id="category"
-          type="text"
           value={category}
           onChange={(e) => setCategory(e.target.value)}
           className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
           required
-        />
+        >
+          <option value="">Selecciona una opción</option>
+          <option value="1">Café</option>
+          <option value="2">Hamburguesas</option>
+          <option value="3">Pizzas</option>
+          <option value="4">Donas</option>
+          <option value="5">Pasteles</option>
+          <option value="6">Galletas</option>
+        </select>
       </div>
       <button
         type="submit"
